@@ -33,11 +33,11 @@ public class RideController {
                                 @RequestParam(value = "location", defaultValue = "Brighton") String location) {
 
         for (Driver driver1 : drivers)
-            if (driver1.getName().equals(name))
+            if (driver1.getUsername().equals(name))
                 return false;
 
         for (Passenger passenger : passengers)
-            if (passenger.getName().equals(name))
+            if (passenger.getUsername().equals(name))
                 return false;
 
         Driver driver = new Driver();
@@ -60,11 +60,11 @@ public class RideController {
         drivers.add(mark);
 
         for (Driver driver : drivers)
-            if (driver.getName().equals(name))
+            if (driver.getUsername().equals(name))
                 return false;
 
         for (Passenger passenger : passengers)
-            if (passenger.getName().equals(name))
+            if (passenger.getUsername().equals(name))
                 return false;
         Passenger pas = new Passenger();
         pas.setLocation(location);
@@ -80,7 +80,7 @@ public class RideController {
     @GetMapping("/checkNotification")
     public boolean checkIfHired(@RequestParam(value = "username", defaultValue = "Team2") String driverName) {
         for (Driver driver : drivers) {
-            if (driver.getName().equals(driverName) && driver.getIsHired()) {
+            if (driver.getUsername().equals(driverName) && driver.getIsHired()) {
                 return true;
             }
         }
@@ -90,7 +90,7 @@ public class RideController {
     @PostMapping("/hire")
     public void hireADriver(@RequestParam(value = "username", defaultValue = "Team2") String driverName) {
         for (Driver driver : drivers) {
-            if (driver.getName().equals(driverName)) {
+            if (driver.getUsername().equals(driverName)) {
                 driver.setHired(true);
             }
         }
