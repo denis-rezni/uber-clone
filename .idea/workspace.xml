@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e6b182e-e87e-4b9a-af53-9340a9f848ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/PostRequestTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/people/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/people/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/people/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/people/Passenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/people/PassengerClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/people/PassengerClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/people/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/people/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/RideController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/RideController.java" afterDir="false" />
-    </list>
+    <list default="true" id="6e6b182e-e87e-4b9a-af53-9340a9f848ab" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -247,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580728000552</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Made PassengerClientTest class work properly, choosing a driver is now available">
+      <created>1580737866012</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1580737866012</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,17 +274,18 @@
     <MESSAGE value="Trying to get rid of example files" />
     <MESSAGE value="Changed project name" />
     <MESSAGE value="Added inheritance for Driver and Passenger classes, changed method names" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added inheritance for Driver and Passenger classes, changed method names" />
+    <MESSAGE value="Made PassengerClientTest class work properly, choosing a driver is now available" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made PassengerClientTest class work properly, choosing a driver is now available" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="3" key="#Project_Structure" timestamp="1580727412644">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="3" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1580727412644" />
-    <state x="249" y="0" key="CommitChangelistDialog2" timestamp="1580727999633">
+    <state x="249" y="0" key="CommitChangelistDialog2" timestamp="1580737864874">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="249" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1580727999633" />
+    <state x="249" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1580737864874" />
     <state width="1237" height="291" key="GridCell.Tab.0.bottom" timestamp="1580737557601">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -302,5 +302,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="291" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1580737557601" />
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1580737877403">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1580737877403" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 package people;
 
-public class Person {
+public abstract class Person {
     final static String urlBeginning = "http://localhost:8080/";
     String username;
     String location;
