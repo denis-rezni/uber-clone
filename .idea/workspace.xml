@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e6b182e-e87e-4b9a-af53-9340a9f848ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/people/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/PostRequestTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/people/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/people/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/people/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/people/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/people/PassengerClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/people/PassengerClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/people/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/people/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/server/RideController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/RideController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,19 +119,6 @@
       </method>
     </configuration>
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="application.Application" />
-      <module name="gs-rest-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="application.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="server.Application" />
       <module name="gs-rest-service" />
       <extension name="coverage">
@@ -144,12 +131,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GreetingGetter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="getter.GreetingGetter" />
-      <module name="gs-rest-service" />
+    <configuration name="PassengerClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="people.PassengerClientTest" />
+      <module name="uber-clone.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="getter.*" />
+          <option name="PATTERN" value="people.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostRequestTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.PostRequestTests" />
+      <module name="uber-clone.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PostRequestTests" />
+        <item itemvalue="Application.PassengerClientTest" />
         <item itemvalue="Application.Application (2)" />
         <item itemvalue="Application.Application (1)" />
         <item itemvalue="Application.TestPassenger" />
-        <item itemvalue="Application.GreetingGetter" />
-        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576620594938</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added inheritance for Driver and Passenger classes, changed method names">
+      <created>1580728000552</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1580728000552</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,12 +274,33 @@
     <MESSAGE value="Added hiring" />
     <MESSAGE value="Trying to get rid of example files" />
     <MESSAGE value="Changed project name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed project name" />
+    <MESSAGE value="Added inheritance for Driver and Passenger classes, changed method names" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added inheritance for Driver and Passenger classes, changed method names" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="3" key="#Project_Structure" timestamp="1580727412644">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="3" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1580727412644" />
+    <state x="249" y="0" key="CommitChangelistDialog2" timestamp="1580727999633">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="249" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1580727999633" />
+    <state width="1237" height="291" key="GridCell.Tab.0.bottom" timestamp="1580737557601">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="291" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1580737557601" />
+    <state width="1237" height="291" key="GridCell.Tab.0.center" timestamp="1580737557600">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="291" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1580737557600" />
+    <state width="1237" height="291" key="GridCell.Tab.0.left" timestamp="1580737557600">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="291" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1580737557600" />
+    <state width="1237" height="291" key="GridCell.Tab.0.right" timestamp="1580737557601">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="291" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1580737557601" />
   </component>
 </project>

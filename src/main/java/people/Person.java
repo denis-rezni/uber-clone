@@ -1,6 +1,7 @@
 package people;
 
 public class Person {
+    final static String urlBeginning = "http://localhost:8080/";
     String username;
     String location;
 

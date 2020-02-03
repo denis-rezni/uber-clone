@@ -18,14 +18,15 @@ public class RideController {
     List<Driver> drivers = new ArrayList<>();
 
     @GetMapping("/drivers")
-    public List<Driver> driversGET(@RequestParam(value = "location", defaultValue = "Nothing") String location) {
+    public List<Driver> driversGET(@RequestParam(value = "location", defaultValue = "Nowhere") String location) {
 
-        List<Driver> driverAtLoc = new ArrayList<>();
+        List<Driver> driversAtLoc = new ArrayList<>();
 
-        for (int i = 0; i < drivers.size(); i++)
-            if (drivers.get(i).getLocation().equals(location))
-                driverAtLoc.add(drivers.get(i));
-        return driverAtLoc;
+        for (Driver driver : drivers)
+            if (driver.getLocation().equals(location) && !driver.IsHired()) {
+                driversAtLoc.add(driver);
+            }
+        return driversAtLoc;
     }
 
     @PostMapping("/driver")
@@ -43,10 +44,11 @@ public class RideController {
         Driver driver = new Driver();
         driver.setLocation(location);
         driver.setUsername(name);
+        System.out.println("new driver");
         System.out.println(name);
         System.out.println(location);
         drivers.add(driver);
-        System.out.println(passengers.size());
+        System.out.println(drivers.size());
 
         return true;
     }
@@ -55,10 +57,6 @@ public class RideController {
     public boolean createPassenger(@RequestParam(value = "username", defaultValue = "Team2") String name,
                                    @RequestParam(value = "location", defaultValue = "Brighton") String location) {
 
-        Driver mark = new Driver();
-        mark.setUsername("mark");
-        drivers.add(mark);
-
         for (Driver driver : drivers)
             if (driver.getUsername().equals(name))
                 return false;
@@ -66,12 +64,13 @@ public class RideController {
         for (Passenger passenger : passengers)
             if (passenger.getUsername().equals(name))
                 return false;
-        Passenger pas = new Passenger();
-        pas.setLocation(location);
-        pas.setUsername(name);
+        Passenger passenger = new Passenger();
+        passenger.setLocation(location);
+        passenger.setUsername(name);
+        System.out.println("new passenger");
         System.out.println(name);
         System.out.println(location);
-        passengers.add(pas);
+        passengers.add(passenger);
         System.out.println(passengers.size());
 
         return true;
@@ -80,7 +79,7 @@ public class RideController {
     @GetMapping("/checkNotification")
     public boolean checkIfHired(@RequestParam(value = "username", defaultValue = "Team2") String driverName) {
         for (Driver driver : drivers) {
-            if (driver.getUsername().equals(driverName) && driver.getIsHired()) {
+            if (driver.getUsername().equals(driverName) && driver.IsHired()) {
                 return true;
             }
         }
@@ -92,6 +91,7 @@ public class RideController {
         for (Driver driver : drivers) {
             if (driver.getUsername().equals(driverName)) {
                 driver.setHired(true);
+                break;
             }
         }
     }

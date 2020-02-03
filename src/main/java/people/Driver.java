@@ -5,11 +5,11 @@ import okhttp3.*;
 import java.io.IOException;
 
 public class Driver extends Person{
-    private boolean isHired;
+    boolean isHired;
 
     private final OkHttpClient httpClient = new OkHttpClient();
 
-    public boolean getIsHired() {
+    public boolean IsHired() {
         return this.isHired;
     }
 
@@ -27,7 +27,7 @@ public class Driver extends Person{
     public void postDriver() throws Exception {
         // form parameters
         Request request = new Request.Builder()
-                .url("https://localhost:8080/passenger?"
+                .url("https://localhost:8080/driver?"
                         + "username=" + username + "&location=" + location)
                 .build();
 
